@@ -93,7 +93,7 @@ def import_list(json_files):
 
 def find_age(ip_list, json_data):
     """
-    Imports all json files into a list
+    Finds the first appearance of a node in the available data
     """
     return [min(json_data['Crawl'][json_data['IP'] == IP]) for IP in ip_list]
 
